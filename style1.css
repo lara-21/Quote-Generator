@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
+}
+
+body {
+  background-image: url('https://source.unsplash.com/1920x1080/?inspiration,motivation');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#quote-container {
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#quote-text {
+  font-size: 8vw; /* Makes the font size responsive and HUGE */
+  line-height: 1.3;
+  font-weight: bold;
+  max-width: 90%;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+#next-quote-btn {
+  margin-top: 40px;
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  border: none;
+  background-color: #00b894;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#next-quote-btn:hover {
+  background-color: #01987a;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
